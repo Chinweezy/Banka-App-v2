@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Banka | Admin Dashboard</title>
+        <link rel = "stylesheet" href = "../css/custom.css" type = "text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9eb2e10802.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <span class="navbar-brand">Banka</span>
+            <button class="navbar-toggler" onclick="classToggle()">
+                <span class="fas fa-bars"></span>
+            </button>
+        
+            <ul class="navbar-items">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Log Out</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">    
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="../images/profile-default.png" alt="default picture" class="profile-image">
+                </div>
+                <h4>Welcome Admin</h4>
+                
+                <div class="menu">
+                    <button id="profile" class="tablinks" onclick="displayInfo(event, 'profile-tab')">User Accounts</button>
+                    <button class="tablinks" onclick="displayInfo(event, 'transaction-tab')">Admin/Staff Acounts</button>
+                    <button class="tablinks" onclick="displayInfo(event, 'account-tab')">Account Records</button>
+                </div>
+
+                <div id="profile-tab" class="tabcontent">
+                    <table class="center profile-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>BVN</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Phone Number</th>
+                            <th id = "activate/deactivate"></th>
+                        </tr>
+                      <tr>
+                        <td>Sherlock Holmes</td>
+                        <td>***********</td> 
+                        <td>sherlock.holmes@bakerstreet.com</td> 
+                        <td>221B Baker Street, Ebute Metta, Lagos</td>
+                        <td>08053378999</td>
+                        <td><button disabled="disabled">Deactivate</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>Sherlock Holmes</td>
+                        <td>***********</td> 
+                        <td>sherlock.holmes@bakerstreet.com</td> 
+                        <td>221B Baker Street, Ebute Metta, Lagos</td>
+                        <td>08053378999</td>
+                        <td><button disabled="disabled">Deactivate</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>Sherlock Holmes</td>
+                        <td>***********</td> 
+                        <td>sherlock.holmes@bakerstreet.com</td> 
+                        <td>221B Baker Street, Ebute Metta, Lagos</td>
+                        <td>08053378999</td>
+                        <td><button disabled="disabled">Deactivate</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>Sherlock Holmes</td>
+                        <td>***********</td> 
+                        <td>sherlock.holmes@bakerstreet.com</td> 
+                        <td>221B Baker Street, Ebute Metta, Lagos</td>
+                        <td>08053378999</td>
+                        <td><button disabled="disabled">Deactivate</button></td>
+                      </tr>
+
+                    </table>
+                    <div class="edit">
+                      <button id="edit"><i class="fas fa-user-edit"></i></button>
+                    </div>
+                </div>
+
+                <div id="transaction-tab" class="tabcontent">
+                    <table class="center transaction-table">
+                        <tr>
+                            <th>DATE</th>
+                            <th>ACCOUNT NUMBER</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Banka Banking App, Copyright &copy; 2020</p>
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="userDashboard.js"></script>
+    </body>
+</html>

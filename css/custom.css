@@ -1,0 +1,249 @@
+/* Global CSS */
+html {
+    height: 100%; 
+}
+
+body {
+    background-color: #3a3a72;
+    color: #000000;
+    margin: 0;
+    font-size: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Home page */
+.navbar {
+    background-color: #807a7a;
+}
+
+span.navbar-brand {
+    color: #f1e7e7;
+    font-size: 2rem;
+    margin-left: 20px;
+
+}
+
+button.navbar-toggler {
+    padding: 4px 12px;
+    background-color: #807a7a;
+    border: solid 1px #807a7a;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+span.fas.fa-bars {
+    font-size: 2.2em;
+    color: #f1e7e7;
+}
+
+.navbar-items {
+    display: inline-flex;       
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f1e7e7;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    padding: 30px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    margin-top: -22px;
+    padding: 45px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  } */
+
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.content-text {
+    text-align: center;
+}
+/* Login page */
+form.form-group {
+    text-align: center;
+    display: block;
+}
+
+.form {
+    background-color:  rgb(128, 122, 122, 0.7);
+    height: 100%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-top: 20%;
+}
+
+.form-controls{
+    text-align: center;
+}
+
+.input-controls{
+    margin: 20px 5px;
+    padding: 15px;
+    width: 60%;
+    height: 60%;
+}
+
+input[type = "submit"] {
+    padding: 10px;
+    margin: 15px 20px;
+}
+
+
+/* Dashboard */
+div.menu{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #f1e7e7;
+}
+
+li.menu-item {
+    padding: 10px 15px;
+}
+
+div.profile-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+img.profile-image{
+    border-radius: 360px;
+    width: 40%;
+    height: 40%;
+}
+
+.tabcontent {
+    display: none;
+}
+
+table.profile-table, table.transaction-table {
+    border-spacing: 10px;
+    background-color: #807a7a;
+    margin: 20px;
+}
+
+/* Transaction History */
+.transaction-data, .transaction-info {
+    border: 1px solid #3a3a72;
+    background-color: #807a7a;
+    margin: 30px auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #807a7a;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .navbar-items {
+      flex-direction: column;
+      padding-left: 20px;
+      margin: 0;
+      display: none;
+    }
+
+    .nav-item {
+        padding: 5px 10px;
+    }
+
+    .navbar-toggleShow {
+        display: flex;
+      }
+  }
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navbar {
+        font-size: 18px;
+    }
+    
+    .navbar-toggler {
+        display: none;
+    }
+
+    .nav-item {
+        padding: 20px;
+    }
+
+    .navbar-items {
+        display: inline-flex;
+        float: right;
+        margin-right: 20px;
+    }
+}

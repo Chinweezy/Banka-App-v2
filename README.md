@@ -1,9 +1,6 @@
 # Banka-Andela-Developer-Challenge
+[![Build Status](https://travis-ci.org/Chinweezy/Banka-App-v2.svg?branch=master)](https://travis-ci.org/Chinweezy/Banka-App-v2)  [![Coverage Status](https://coveralls.io/repos/github/Chinweezy/Banka-App-v2/badge.svg?branch=master)](https://coveralls.io/github/Chinweezy/Banka-App-v2?branch=master)  [![Maintainability](https://api.codeclimate.com/v1/badges/e67a2e4ec39d6e52ab77/maintainability)](https://codeclimate.com/github/Chinweezy/Banka-App-v2/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/e67a2e4ec39d6e52ab77/test_coverage)](https://codeclimate.com/github/Chinweezy/Banka-App-v2/test_coverage)
 
-[![Build Status](https://travis-ci.org/Chinweezy/Banka.svg?branch=develop)](https://travis-ci.org/Chinweezy/Banka)
-[![Coverage Status](https://coveralls.io/repos/github/Chinweezy/Banka/badge.svg?branch=develop)](https://coveralls.io/github/Chinweezy/Banka?branch=develop)
-[![Maintainability](https://api.codeclimate.com/v1/badges/3c7ae73a3756aaf6e685/maintainability)](https://codeclimate.com/github/Chinweezy/Banka/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/3c7ae73a3756aaf6e685/test_coverage)](https://codeclimate.com/github/Chinweezy/Banka/test_coverage)
 
 My repository of Banka: a light-weight core banking application that powers banking operations like account creation, customer deposit and withdrawals. This app is meant to support a single bank, where users can signup and create bank accounts online, but must visit the branch to withdraw or deposit money.
 

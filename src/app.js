@@ -1,21 +1,23 @@
 import express from 'express';
-import logger from 'morgan';
 import bodyParser from 'body-parser';
-import userRoute from './api/v1/routes/users';
-import accountRoute from './api/v1/routes/accounts';
+import chalk from 'chalk';
+import debug from 'debug';
+import 'dotenv/config';
+
+// Directories
+import routes from './routes';
+
 
 const app = express();
+const port = process.env.PORT || 3000;
+const print = debug('dev');
 
-const port = parseInt(process.env.PORT, 10) || 3000;
-
-app.use(logger('dev'));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
-  res.send('Hello darkness my old friend!');
-});
-app.use('/', userRoute);
-app.use('/', accountRoute);
+
+app.get('/', (req, res) => res.status(301).redirect('/api/v1/'));
+// app.get('/', (req, res) => {res.send('Hello darkness my old friend!');});
+app.use('/api/v1', routes);
 
 app.use('*', (req, res) => {
   res.status(400).send({ message: 'Bazinga! Wrong route' });
@@ -37,7 +39,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  print(`Listening on port ${chalk.blue(port)}`);
 });
 
 export default app;
