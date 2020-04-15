@@ -2,13 +2,13 @@
   "name": "banka",
   "version": "1.0.0",
   "description": "A lightweight banking application",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node build app.js",
     "dev": "set DEBUG=dev && nodemon --exec babel-node src/app.js",
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && babel -d ./build ./src --ignore '**/*.spec.js'",
-    "test": "mocha --require @babel/register '**/*.spec.js' --exit --watch",
+    "test": "mocha --require @babel/register '**/*.spec.js' --exit",
     "nyc": "nyc --reporter=lcov npm run test && nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc npm test"
   },
